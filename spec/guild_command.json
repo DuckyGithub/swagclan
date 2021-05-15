@@ -1,0 +1,18 @@
+{
+    "guild_id": "746067864481431562",
+    "application_command_id": "746067864481431565",
+    "command_id": "682dc745-bdb3-5d3c-bc6b-06699a274c70",
+    "command_version": "bvvtkrj",
+    "enabled": true,
+    "timeout": 15,
+    "config": {
+        "lgrkdiu": "803389954591555584"
+    },
+    "permissions": [
+        {
+            "type": "user",
+            "id": "165358687974719488",
+            "disallow": false
+        }
+    ]
+}

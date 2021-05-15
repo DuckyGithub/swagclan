@@ -1,0 +1,73 @@
+{
+  "command_id": "682dc745-bdb3-5d3c-bc6b-06699a274c70",
+  "version": "bvvtkrj",
+  "trigger": "kick",
+  "config": {
+    "lgrkdiu": {
+      "name": "Log Channel",
+      "description": "The channel to log kicks to.",
+      "type": "channel",
+      "initial": null
+    }
+  },
+  "params": [{
+    "name": "member",
+    "description": "The member to kick from the server.",
+    "required": false,
+    "type": "string"
+  }],
+  "actions": {
+    "MVeFFiU": {
+      "type": "action",
+      "rule": "kick_member",
+      "next": "mxfamvb",
+      "fields": {
+        "member": {
+          "type": "ctx",
+          "id": "xCflalL"
+        }
+      }
+    },
+    "mxfamvb": {
+      "type": "action",
+      "rule": "send_message",
+      "fields": {
+        "channel": {
+          "type": "ctx",
+          "id": "lgrkdiu"
+        },
+        "message": {
+          "type": "action_ref",
+          "id": "tgokval"
+        }
+      }
+    },
+    "tgokval": {
+      "type": "action",
+      "rule": "join",
+      "parent": "mxfamvb",
+      "fields": {
+        "first": {
+          "type": "input",
+          "id": "Kicked member"
+        },
+        "second": {
+          "type": "action_ref",
+          "id": "eosgxpq"
+        }
+      }
+    },
+    "eosgxpq": {
+      "type": "action",
+      "rule": "name_of_member",
+      "parent": "tgokval",
+      "fields": {
+        "member": {
+          "type": "ctx",
+          "id": "xCflalL"
+        }
+      }
+    }
+  },
+  "first": "MVeFFiU"
+}

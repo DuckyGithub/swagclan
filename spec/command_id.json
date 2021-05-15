@@ -1,0 +1,25 @@
+{
+    "id": "682dc745-bdb3-5d3c-bc6b-06699a274c70",
+    "name": "Kick",
+    "summary": "Kick a member from the server with a given reason.",
+    "tags": ["moderation"],
+    "thumbnail": "kick.png",
+    "author": "165358687974719488",
+    "private": true,
+    "versions": {
+        "bvvtkrj": {
+            "id": "bvvtkrj",
+            "created_at": "2021-03-19T00:27:31.944Z",
+            "before": "sxdbsnb",
+            "after": null
+        },
+        "sxdbsnb": {
+            "id": "sxdbsnb",
+            "created_at": "2021-03-19T00:26:32.569Z",
+            "before": null,
+            "after": "bvvtkrj"
+        }
+    },
+    "latest": "bvvtkrj",
+    "first": "sxdbsnb"
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "properties": {
+    "mongo": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "database": {
+          "type": "string"
+        }
+      }
+    },
+    "redis": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string"
+        },
+        "port": {
+          "type": "number"
+        }
+      }
+    },
+    "api": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "number"
+        }
+      }
+    },
+    "base_api": {
+      "type": "string"
+    },
+    "base_web": {
+      "type": "string"
+    },
+    "oauth": {
+      "type": "object",
+      "properties": {
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "permissions": {
+          "type": "number"
+        }
+      }
+    },
+    "dev_guild": {
+      "type": "string"
+    }
+  }
+}
